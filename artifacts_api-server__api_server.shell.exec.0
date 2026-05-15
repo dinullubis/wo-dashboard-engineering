@@ -1,0 +1,3447 @@
+
+> @workspace/api-server@0.0.0 dev /home/runner/workspace/artifacts/api-server
+> export NODE_ENV=development && pnpm run build && pnpm run start
+
+
+> @workspace/api-server@0.0.0 build /home/runner/workspace/artifacts/api-server
+> node ./build.mjs
+
+
+  [37mdist/[0m[1mindex.mjs[0m                       [33m2.2mb ⚠️[0m
+  [37mdist/[0m[1mpino-worker.mjs[0m               [36m153.4kb[0m
+  [37mdist/[0m[1mpino-file.mjs[0m                 [36m142.1kb[0m
+  [37mdist/[0m[1mpino-pretty.mjs[0m               [36m114.6kb[0m
+  [37mdist/[0m[1mthread-stream-worker.mjs[0m        [36m7.3kb[0m
+  [37mdist/[0m[1mindex.mjs.map[0m                   [36m3.7mb[0m
+  [37mdist/[0m[1mpino-worker.mjs.map[0m           [36m256.9kb[0m
+  [37mdist/[0m[1mpino-file.mjs.map[0m             [36m229.0kb[0m
+  [37mdist/[0m[1mpino-pretty.mjs.map[0m           [36m203.9kb[0m
+  [37mdist/[0m[1mthread-stream-worker.mjs.map[0m   [36m12.0kb[0m
+
+⚡ [32mDone in 796ms[0m
+
+> @workspace/api-server@0.0.0 start /home/runner/workspace/artifacts/api-server
+> node --enable-source-maps ./dist/index.mjs
+
+[14:03:47.004] [32mINFO[39m (297): [36mServer listening[39m
+    [35mport[39m: 8080
+[14:03:49.728] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 1,
+      "method": "GET",
+      "url": "/api/metrics/system"
+    }
+    [35mres[39m: {
+      "statusCode": 200
+    }
+    [35mresponseTime[39m: 6
+[14:03:49.747] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 5,
+      "method": "GET",
+      "url": "/api/healthz"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 1
+[14:03:49.766] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 4,
+      "method": "GET",
+      "url": "/api/services"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 22
+[14:03:49.767] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 2,
+      "method": "GET",
+      "url": "/api/logs"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 38
+[14:03:49.769] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 3,
+      "method": "GET",
+      "url": "/api/metrics/summary"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 27
+[14:03:55.128] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 7,
+      "method": "GET",
+      "url": "/api/metrics/summary"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 3
+[14:03:55.133] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 8,
+      "method": "GET",
+      "url": "/api/metrics/system"
+    }
+    [35mres[39m: {
+      "statusCode": 200
+    }
+    [35mresponseTime[39m: 0
+[14:03:58.919] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 6,
+      "method": "GET",
+      "url": "/api/ie/work-orders"
+    }
+    [35mres[39m: {
+      "statusCode": 200
+    }
+    [35mresponseTime[39m: 9004
+[14:04:00.136] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 9,
+      "method": "GET",
+      "url": "/api/services"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 2
+[14:04:00.139] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 11,
+      "method": "GET",
+      "url": "/api/healthz"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 0
+[14:04:00.140] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 10,
+      "method": "GET",
+      "url": "/api/logs"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 2
+[14:04:00.221] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 12,
+      "method": "GET",
+      "url": "/api/metrics/summary"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 2
+[14:04:00.240] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 13,
+      "method": "GET",
+      "url": "/api/metrics/system"
+    }
+    [35mres[39m: {
+      "statusCode": 200
+    }
+    [35mresponseTime[39m: 1
+[14:04:05.366] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 14,
+      "method": "GET",
+      "url": "/api/metrics/summary"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 2
+[14:04:05.368] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 15,
+      "method": "GET",
+      "url": "/api/metrics/system"
+    }
+    [35mres[39m: {
+      "statusCode": 200
+    }
+    [35mresponseTime[39m: 0
+[14:04:10.279] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 17,
+      "method": "GET",
+      "url": "/api/healthz"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 1
+[14:04:10.279] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 16,
+      "method": "GET",
+      "url": "/api/services"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 2
+[14:04:10.281] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 18,
+      "method": "GET",
+      "url": "/api/logs"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 1
+[14:04:10.476] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 19,
+      "method": "GET",
+      "url": "/api/metrics/system"
+    }
+    [35mres[39m: {
+      "statusCode": 200
+    }
+    [35mresponseTime[39m: 1
+[14:04:10.917] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 20,
+      "method": "GET",
+      "url": "/api/metrics/summary"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 2
+[14:04:15.609] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 21,
+      "method": "GET",
+      "url": "/api/metrics/system"
+    }
+    [35mres[39m: {
+      "statusCode": 200
+    }
+    [35mresponseTime[39m: 1
+[14:04:16.023] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 22,
+      "method": "GET",
+      "url": "/api/metrics/summary"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 2
+[14:04:20.394] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 24,
+      "method": "GET",
+      "url": "/api/healthz"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 0
+[14:04:20.399] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 25,
+      "method": "GET",
+      "url": "/api/logs"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 2
+[14:04:20.404] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 26,
+      "method": "GET",
+      "url": "/api/services"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 1
+[14:04:20.706] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 27,
+      "method": "GET",
+      "url": "/api/metrics/system"
+    }
+    [35mres[39m: {
+      "statusCode": 200
+    }
+    [35mresponseTime[39m: 1
+[14:04:20.926] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 23,
+      "method": "GET",
+      "url": "/api/ie/work-orders"
+    }
+    [35mres[39m: {
+      "statusCode": 200
+    }
+    [35mresponseTime[39m: 4877
+[14:04:21.135] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 28,
+      "method": "GET",
+      "url": "/api/metrics/summary"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 2
+[14:04:39.990] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 29,
+      "method": "GET",
+      "url": "/api/ie/work-orders"
+    }
+    [35mres[39m: {
+      "statusCode": 200
+    }
+    [35mresponseTime[39m: 8361
+[14:05:10.963] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 30,
+      "method": "GET",
+      "url": "/api/ie/work-orders"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 15017
+[14:05:34.445] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 31,
+      "method": "GET",
+      "url": "/api/ie/work-orders"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 8365
+[14:05:35.269] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 32,
+      "method": "GET",
+      "url": "/api/healthz"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 0
+[14:05:35.274] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 33,
+      "method": "GET",
+      "url": "/api/metrics/system"
+    }
+    [35mres[39m: {
+      "statusCode": 200
+    }
+    [35mresponseTime[39m: 0
+[14:05:35.295] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 34,
+      "method": "GET",
+      "url": "/api/metrics/summary"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 12
+[14:05:35.299] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 35,
+      "method": "GET",
+      "url": "/api/logs"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 11
+[14:05:35.302] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 36,
+      "method": "GET",
+      "url": "/api/services"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 10
+[14:05:40.371] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 38,
+      "method": "GET",
+      "url": "/api/metrics/system"
+    }
+    [35mres[39m: {
+      "statusCode": 200
+    }
+    [35mresponseTime[39m: 1
+[14:05:40.405] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 39,
+      "method": "GET",
+      "url": "/api/metrics/summary"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 3
+[14:05:45.363] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 40,
+      "method": "GET",
+      "url": "/api/healthz"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 0
+[14:05:45.413] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 41,
+      "method": "GET",
+      "url": "/api/services"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 2
+[14:05:45.416] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 42,
+      "method": "GET",
+      "url": "/api/logs"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 1
+[14:05:45.476] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 43,
+      "method": "GET",
+      "url": "/api/metrics/system"
+    }
+    [35mres[39m: {
+      "statusCode": 200
+    }
+    [35mresponseTime[39m: 1
+[14:05:45.501] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 44,
+      "method": "GET",
+      "url": "/api/metrics/summary"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 2
+[14:05:46.832] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 37,
+      "method": "GET",
+      "url": "/api/ie/work-orders"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 8929
+[14:05:50.589] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 45,
+      "method": "GET",
+      "url": "/api/metrics/system"
+    }
+    [35mres[39m: {
+      "statusCode": 200
+    }
+    [35mresponseTime[39m: 1
+[14:05:50.622] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 46,
+      "method": "GET",
+      "url": "/api/metrics/summary"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 2
+[14:05:55.465] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 47,
+      "method": "GET",
+      "url": "/api/healthz"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 1
+[14:05:55.517] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 48,
+      "method": "GET",
+      "url": "/api/services"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 1
+[14:05:55.521] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 49,
+      "method": "GET",
+      "url": "/api/logs"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 2
+[14:05:55.697] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 50,
+      "method": "GET",
+      "url": "/api/metrics/system"
+    }
+    [35mres[39m: {
+      "statusCode": 200
+    }
+    [35mresponseTime[39m: 1
+[14:05:55.723] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 51,
+      "method": "GET",
+      "url": "/api/metrics/summary"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 2
+[14:06:00.808] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 52,
+      "method": "GET",
+      "url": "/api/metrics/system"
+    }
+    [35mres[39m: {
+      "statusCode": 200
+    }
+    [35mresponseTime[39m: 0
+[14:06:00.830] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 53,
+      "method": "GET",
+      "url": "/api/metrics/summary"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 2
+[14:06:05.573] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 55,
+      "method": "GET",
+      "url": "/api/healthz"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 0
+[14:06:05.631] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 56,
+      "method": "GET",
+      "url": "/api/logs"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 2
+[14:06:05.642] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 57,
+      "method": "GET",
+      "url": "/api/services"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 1
+[14:06:05.912] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 58,
+      "method": "GET",
+      "url": "/api/metrics/system"
+    }
+    [35mres[39m: {
+      "statusCode": 200
+    }
+    [35mresponseTime[39m: 1
+[14:06:05.929] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 59,
+      "method": "GET",
+      "url": "/api/metrics/summary"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 2
+[14:06:11.035] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 60,
+      "method": "GET",
+      "url": "/api/metrics/system"
+    }
+    [35mres[39m: {
+      "statusCode": 200
+    }
+    [35mresponseTime[39m: 1
+[14:06:11.041] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 61,
+      "method": "GET",
+      "url": "/api/metrics/summary"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 2
+[14:06:13.432] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 54,
+      "method": "GET",
+      "url": "/api/ie/work-orders"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 11463
+[14:06:18.429] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 62,
+      "method": "GET",
+      "url": "/api/healthz"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 1
+[14:06:18.433] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 64,
+      "method": "GET",
+      "url": "/api/metrics/system"
+    }
+    [35mres[39m: {
+      "statusCode": 200
+    }
+    [35mresponseTime[39m: 1
+[14:06:18.434] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 63,
+      "method": "GET",
+      "url": "/api/metrics/summary"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 3
+[14:06:18.435] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 65,
+      "method": "GET",
+      "url": "/api/logs"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 1
+[14:06:18.442] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 66,
+      "method": "GET",
+      "url": "/api/services"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 1
+[14:06:36.151] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 68,
+      "method": "GET",
+      "url": "/api/healthz"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 1
+[14:06:36.152] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 69,
+      "method": "GET",
+      "url": "/api/metrics/system"
+    }
+    [35mres[39m: {
+      "statusCode": 200
+    }
+    [35mresponseTime[39m: 1
+[14:06:36.168] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 70,
+      "method": "GET",
+      "url": "/api/logs"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 13
+[14:06:36.170] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 71,
+      "method": "GET",
+      "url": "/api/services"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 11
+[14:06:36.174] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 72,
+      "method": "GET",
+      "url": "/api/metrics/summary"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 10
+[14:06:41.251] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 73,
+      "method": "GET",
+      "url": "/api/metrics/system"
+    }
+    [35mres[39m: {
+      "statusCode": 200
+    }
+    [35mresponseTime[39m: 1
+[14:06:41.267] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 74,
+      "method": "GET",
+      "url": "/api/metrics/summary"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 2
+[14:06:43.396] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 67,
+      "method": "GET",
+      "url": "/api/ie/work-orders"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 8831
+[14:06:46.264] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 76,
+      "method": "GET",
+      "url": "/api/healthz"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 1
+[14:06:46.270] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 77,
+      "method": "GET",
+      "url": "/api/logs"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 2
+[14:06:46.273] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 78,
+      "method": "GET",
+      "url": "/api/services"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 1
+[14:06:46.354] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 79,
+      "method": "GET",
+      "url": "/api/metrics/system"
+    }
+    [35mres[39m: {
+      "statusCode": 200
+    }
+    [35mresponseTime[39m: 1
+[14:06:46.358] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 80,
+      "method": "GET",
+      "url": "/api/metrics/summary"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 1
+[14:06:50.686] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 75,
+      "method": "GET",
+      "url": "/api/ie/work-orders"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 7105
+[14:06:51.592] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 81,
+      "method": "GET",
+      "url": "/api/metrics/system"
+    }
+    [35mres[39m: {
+      "statusCode": 200
+    }
+    [35mresponseTime[39m: 1
+[14:06:51.606] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 82,
+      "method": "GET",
+      "url": "/api/metrics/summary"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 2
+[14:06:56.384] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 83,
+      "method": "GET",
+      "url": "/api/logs"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 2
+[14:06:56.387] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 84,
+      "method": "GET",
+      "url": "/api/healthz"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 0
+[14:06:56.393] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 85,
+      "method": "GET",
+      "url": "/api/services"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 1
+[14:06:56.725] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 86,
+      "method": "GET",
+      "url": "/api/metrics/system"
+    }
+    [35mres[39m: {
+      "statusCode": 200
+    }
+    [35mresponseTime[39m: 0
+[14:06:57.042] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 87,
+      "method": "GET",
+      "url": "/api/metrics/summary"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 2
+[14:07:01.823] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 88,
+      "method": "GET",
+      "url": "/api/metrics/system"
+    }
+    [35mres[39m: {
+      "statusCode": 200
+    }
+    [35mresponseTime[39m: 1
+[14:07:02.135] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 89,
+      "method": "GET",
+      "url": "/api/metrics/summary"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 2
+[14:07:06.506] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 91,
+      "method": "GET",
+      "url": "/api/logs"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 2
+[14:07:06.507] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 93,
+      "method": "GET",
+      "url": "/api/healthz"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 0
+[14:07:06.516] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 92,
+      "method": "GET",
+      "url": "/api/services"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 11
+[14:07:06.931] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 94,
+      "method": "GET",
+      "url": "/api/metrics/system"
+    }
+    [35mres[39m: {
+      "statusCode": 200
+    }
+    [35mresponseTime[39m: 1
+[14:07:07.248] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 95,
+      "method": "GET",
+      "url": "/api/metrics/summary"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 2
+[14:07:12.034] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 96,
+      "method": "GET",
+      "url": "/api/metrics/system"
+    }
+    [35mres[39m: {
+      "statusCode": 200
+    }
+    [35mresponseTime[39m: 1
+[14:07:12.348] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 97,
+      "method": "GET",
+      "url": "/api/metrics/summary"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 2
+[14:07:16.629] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 98,
+      "method": "GET",
+      "url": "/api/healthz"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 1
+[14:07:16.630] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 99,
+      "method": "GET",
+      "url": "/api/logs"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 1
+[14:07:16.636] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 100,
+      "method": "GET",
+      "url": "/api/services"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 1
+[14:07:17.130] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 101,
+      "method": "GET",
+      "url": "/api/metrics/system"
+    }
+    [35mres[39m: {
+      "statusCode": 200
+    }
+    [35mresponseTime[39m: 1
+[14:07:17.445] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 102,
+      "method": "GET",
+      "url": "/api/metrics/summary"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 2
+[14:07:22.229] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 103,
+      "method": "GET",
+      "url": "/api/metrics/system"
+    }
+    [35mres[39m: {
+      "statusCode": 200
+    }
+    [35mresponseTime[39m: 1
+[14:07:22.545] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 104,
+      "method": "GET",
+      "url": "/api/metrics/summary"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 4
+[14:07:23.945] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 90,
+      "method": "GET",
+      "url": "/api/ie/work-orders"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 18058
+[14:07:26.739] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 105,
+      "method": "GET",
+      "url": "/api/logs"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 1
+[14:07:26.743] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 106,
+      "method": "GET",
+      "url": "/api/healthz"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 0
+[14:07:26.748] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 107,
+      "method": "GET",
+      "url": "/api/services"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 1
+[14:07:27.327] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 108,
+      "method": "GET",
+      "url": "/api/metrics/system"
+    }
+    [35mres[39m: {
+      "statusCode": 200
+    }
+    [35mresponseTime[39m: 1
+[14:07:27.640] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 109,
+      "method": "GET",
+      "url": "/api/metrics/summary"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 2
+[14:07:32.426] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 110,
+      "method": "GET",
+      "url": "/api/metrics/system"
+    }
+    [35mres[39m: {
+      "statusCode": 200
+    }
+    [35mresponseTime[39m: 1
+[14:07:32.745] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 111,
+      "method": "GET",
+      "url": "/api/metrics/summary"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 2
+[14:07:36.858] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 113,
+      "method": "GET",
+      "url": "/api/healthz"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 1
+[14:07:36.859] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 112,
+      "method": "GET",
+      "url": "/api/logs"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 3
+[14:07:36.860] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 114,
+      "method": "GET",
+      "url": "/api/services"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 1
+[14:07:37.531] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 115,
+      "method": "GET",
+      "url": "/api/metrics/system"
+    }
+    [35mres[39m: {
+      "statusCode": 200
+    }
+    [35mresponseTime[39m: 1
+[14:07:37.863] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 116,
+      "method": "GET",
+      "url": "/api/metrics/summary"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 4
+[14:07:42.642] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 118,
+      "method": "GET",
+      "url": "/api/metrics/system"
+    }
+    [35mres[39m: {
+      "statusCode": 200
+    }
+    [35mresponseTime[39m: 1
+[14:07:42.975] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 119,
+      "method": "GET",
+      "url": "/api/metrics/summary"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 3
+[14:07:46.970] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 120,
+      "method": "GET",
+      "url": "/api/services"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 2
+[14:07:46.971] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 121,
+      "method": "GET",
+      "url": "/api/healthz"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 0
+[14:07:46.973] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 122,
+      "method": "GET",
+      "url": "/api/logs"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 1
+[14:07:47.746] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 123,
+      "method": "GET",
+      "url": "/api/metrics/system"
+    }
+    [35mres[39m: {
+      "statusCode": 200
+    }
+    [35mresponseTime[39m: 1
+[14:07:48.074] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 124,
+      "method": "GET",
+      "url": "/api/metrics/summary"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 2
+[14:07:49.217] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 117,
+      "method": "GET",
+      "url": "/api/ie/work-orders"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 10157
+[14:07:52.854] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 125,
+      "method": "GET",
+      "url": "/api/metrics/system"
+    }
+    [35mres[39m: {
+      "statusCode": 200
+    }
+    [35mresponseTime[39m: 1
+[14:07:53.171] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 126,
+      "method": "GET",
+      "url": "/api/metrics/summary"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 2
+[14:07:57.076] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 127,
+      "method": "GET",
+      "url": "/api/healthz"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 1
+[14:07:57.079] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 128,
+      "method": "GET",
+      "url": "/api/services"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 1
+[14:07:57.085] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 129,
+      "method": "GET",
+      "url": "/api/logs"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 1
+[14:07:57.956] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 130,
+      "method": "GET",
+      "url": "/api/metrics/system"
+    }
+    [35mres[39m: {
+      "statusCode": 200
+    }
+    [35mresponseTime[39m: 0
+[14:07:58.273] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 131,
+      "method": "GET",
+      "url": "/api/metrics/summary"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 2
+[14:08:03.055] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 132,
+      "method": "GET",
+      "url": "/api/metrics/system"
+    }
+    [35mres[39m: {
+      "statusCode": 200
+    }
+    [35mresponseTime[39m: 0
+[14:08:03.367] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 133,
+      "method": "GET",
+      "url": "/api/metrics/summary"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 2
+[14:08:07.182] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 135,
+      "method": "GET",
+      "url": "/api/healthz"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 1
+[14:08:07.185] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 136,
+      "method": "GET",
+      "url": "/api/services"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 2
+[14:08:07.189] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 137,
+      "method": "GET",
+      "url": "/api/logs"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 1
+[14:08:08.157] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 138,
+      "method": "GET",
+      "url": "/api/metrics/system"
+    }
+    [35mres[39m: {
+      "statusCode": 200
+    }
+    [35mresponseTime[39m: 1
+[14:08:08.501] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 139,
+      "method": "GET",
+      "url": "/api/metrics/summary"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 3
+[14:08:12.063] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 134,
+      "method": "GET",
+      "url": "/api/ie/work-orders"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 7717
+[14:08:13.255] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 140,
+      "method": "GET",
+      "url": "/api/metrics/system"
+    }
+    [35mres[39m: {
+      "statusCode": 200
+    }
+    [35mresponseTime[39m: 1
+[14:08:13.605] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 141,
+      "method": "GET",
+      "url": "/api/metrics/summary"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 2
+[14:08:17.298] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 142,
+      "method": "GET",
+      "url": "/api/healthz"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 1
+[14:08:17.307] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 143,
+      "method": "GET",
+      "url": "/api/services"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 3
+[14:08:17.321] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 144,
+      "method": "GET",
+      "url": "/api/logs"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 16
+[14:08:18.381] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 145,
+      "method": "GET",
+      "url": "/api/metrics/system"
+    }
+    [35mres[39m: {
+      "statusCode": 200
+    }
+    [35mresponseTime[39m: 1
+[14:08:18.707] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 146,
+      "method": "GET",
+      "url": "/api/metrics/summary"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 3
+[14:08:23.484] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 147,
+      "method": "GET",
+      "url": "/api/metrics/system"
+    }
+    [35mres[39m: {
+      "statusCode": 200
+    }
+    [35mresponseTime[39m: 1
+[14:08:23.823] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 148,
+      "method": "GET",
+      "url": "/api/metrics/summary"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 2
+[14:08:27.404] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 150,
+      "method": "GET",
+      "url": "/api/healthz"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 0
+[14:08:27.408] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 151,
+      "method": "GET",
+      "url": "/api/services"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 2
+[14:08:27.416] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 152,
+      "method": "GET",
+      "url": "/api/logs"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 1
+[14:08:28.576] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 153,
+      "method": "GET",
+      "url": "/api/metrics/system"
+    }
+    [35mres[39m: {
+      "statusCode": 200
+    }
+    [35mresponseTime[39m: 1
+[14:08:28.921] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 154,
+      "method": "GET",
+      "url": "/api/metrics/summary"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 2
+[14:08:33.677] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 155,
+      "method": "GET",
+      "url": "/api/metrics/system"
+    }
+    [35mres[39m: {
+      "statusCode": 200
+    }
+    [35mresponseTime[39m: 1
+[14:08:34.041] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 156,
+      "method": "GET",
+      "url": "/api/metrics/summary"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 2
+[14:08:35.381] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 149,
+      "method": "GET",
+      "url": "/api/ie/work-orders"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 8195
+[14:08:37.518] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 157,
+      "method": "GET",
+      "url": "/api/healthz"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 0
+[14:08:37.526] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 158,
+      "method": "GET",
+      "url": "/api/logs"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 2
+[14:08:37.536] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 159,
+      "method": "GET",
+      "url": "/api/services"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 11
+[14:08:38.788] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 160,
+      "method": "GET",
+      "url": "/api/metrics/system"
+    }
+    [35mres[39m: {
+      "statusCode": 200
+    }
+    [35mresponseTime[39m: 1
+[14:08:39.214] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 161,
+      "method": "GET",
+      "url": "/api/metrics/summary"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 2
+[14:08:43.926] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 162,
+      "method": "GET",
+      "url": "/api/metrics/system"
+    }
+    [35mres[39m: {
+      "statusCode": 200
+    }
+    [35mresponseTime[39m: 1
+[14:08:44.326] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 163,
+      "method": "GET",
+      "url": "/api/metrics/summary"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 2
+[14:08:47.633] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 164,
+      "method": "GET",
+      "url": "/api/logs"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 2
+[14:08:47.635] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 165,
+      "method": "GET",
+      "url": "/api/healthz"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 0
+[14:08:47.651] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 166,
+      "method": "GET",
+      "url": "/api/services"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 2
+[14:08:49.033] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 167,
+      "method": "GET",
+      "url": "/api/metrics/system"
+    }
+    [35mres[39m: {
+      "statusCode": 200
+    }
+    [35mresponseTime[39m: 1
+[14:08:49.436] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 168,
+      "method": "GET",
+      "url": "/api/metrics/summary"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 2
+[14:08:54.128] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 170,
+      "method": "GET",
+      "url": "/api/metrics/system"
+    }
+    [35mres[39m: {
+      "statusCode": 200
+    }
+    [35mresponseTime[39m: 1
+[14:08:54.535] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 171,
+      "method": "GET",
+      "url": "/api/metrics/summary"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 2
+[14:08:57.739] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 172,
+      "method": "GET",
+      "url": "/api/healthz"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 0
+[14:08:57.745] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 173,
+      "method": "GET",
+      "url": "/api/services"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 1
+[14:08:57.747] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 174,
+      "method": "GET",
+      "url": "/api/logs"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 1
+[14:08:59.230] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 175,
+      "method": "GET",
+      "url": "/api/metrics/system"
+    }
+    [35mres[39m: {
+      "statusCode": 200
+    }
+    [35mresponseTime[39m: 1
+[14:08:59.631] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 169,
+      "method": "GET",
+      "url": "/api/ie/work-orders"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 9136
+[14:08:59.662] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 176,
+      "method": "GET",
+      "url": "/api/metrics/summary"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 2
+[14:09:04.335] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 177,
+      "method": "GET",
+      "url": "/api/metrics/system"
+    }
+    [35mres[39m: {
+      "statusCode": 200
+    }
+    [35mresponseTime[39m: 1
+[14:09:04.806] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 178,
+      "method": "GET",
+      "url": "/api/metrics/summary"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 3
+[14:09:07.848] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 179,
+      "method": "GET",
+      "url": "/api/healthz"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 0
+[14:09:07.851] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 180,
+      "method": "GET",
+      "url": "/api/logs"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 2
+[14:09:07.854] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 181,
+      "method": "GET",
+      "url": "/api/services"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 1
+[14:09:09.432] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 182,
+      "method": "GET",
+      "url": "/api/metrics/system"
+    }
+    [35mres[39m: {
+      "statusCode": 200
+    }
+    [35mresponseTime[39m: 2
+[14:09:09.914] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 183,
+      "method": "GET",
+      "url": "/api/metrics/summary"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 2
+[14:09:14.528] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 184,
+      "method": "GET",
+      "url": "/api/metrics/system"
+    }
+    [35mres[39m: {
+      "statusCode": 200
+    }
+    [35mresponseTime[39m: 1
+[14:09:15.008] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 186,
+      "method": "GET",
+      "url": "/api/metrics/summary"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 2
+[14:09:17.960] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 187,
+      "method": "GET",
+      "url": "/api/healthz"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 0
+[14:09:17.963] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 188,
+      "method": "GET",
+      "url": "/api/logs"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 2
+[14:09:17.966] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 189,
+      "method": "GET",
+      "url": "/api/services"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 1
+[14:09:19.623] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 190,
+      "method": "GET",
+      "url": "/api/metrics/system"
+    }
+    [35mres[39m: {
+      "statusCode": 200
+    }
+    [35mresponseTime[39m: 0
+[14:09:20.106] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 191,
+      "method": "GET",
+      "url": "/api/metrics/summary"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 2
+[14:09:22.294] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 185,
+      "method": "GET",
+      "url": "/api/ie/work-orders"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 7544
+[14:09:24.725] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 192,
+      "method": "GET",
+      "url": "/api/metrics/system"
+    }
+    [35mres[39m: {
+      "statusCode": 200
+    }
+    [35mresponseTime[39m: 1
+[14:09:25.208] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 193,
+      "method": "GET",
+      "url": "/api/metrics/summary"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 2
+[14:09:28.079] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 194,
+      "method": "GET",
+      "url": "/api/healthz"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 0
+[14:09:28.086] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 195,
+      "method": "GET",
+      "url": "/api/services"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 1
+[14:09:28.096] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 196,
+      "method": "GET",
+      "url": "/api/logs"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 11
+[14:09:29.820] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 197,
+      "method": "GET",
+      "url": "/api/metrics/system"
+    }
+    [35mres[39m: {
+      "statusCode": 200
+    }
+    [35mresponseTime[39m: 1
+[14:09:30.305] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 198,
+      "method": "GET",
+      "url": "/api/metrics/summary"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 2
+[14:09:34.927] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 199,
+      "method": "GET",
+      "url": "/api/metrics/system"
+    }
+    [35mres[39m: {
+      "statusCode": 200
+    }
+    [35mresponseTime[39m: 1
+[14:09:35.401] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 200,
+      "method": "GET",
+      "url": "/api/metrics/summary"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 2
+[14:09:39.197] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 202,
+      "method": "GET",
+      "url": "/api/services"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 1
+[14:09:39.198] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 203,
+      "method": "GET",
+      "url": "/api/healthz"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 0
+[14:09:39.205] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 204,
+      "method": "GET",
+      "url": "/api/logs"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 1
+[14:09:40.024] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 205,
+      "method": "GET",
+      "url": "/api/metrics/system"
+    }
+    [35mres[39m: {
+      "statusCode": 200
+    }
+    [35mresponseTime[39m: 1
+[14:09:40.508] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 206,
+      "method": "GET",
+      "url": "/api/metrics/summary"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 2
+[14:09:45.578] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 207,
+      "method": "GET",
+      "url": "/api/metrics/system"
+    }
+    [35mres[39m: {
+      "statusCode": 200
+    }
+    [35mresponseTime[39m: 1
+[14:09:45.607] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 208,
+      "method": "GET",
+      "url": "/api/metrics/summary"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 2
+[14:09:46.081] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 201,
+      "method": "GET",
+      "url": "/api/ie/work-orders"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 8576
+[14:09:49.301] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 209,
+      "method": "GET",
+      "url": "/api/services"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 1
+[14:09:49.317] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 210,
+      "method": "GET",
+      "url": "/api/healthz"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 0
+[14:09:49.320] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 211,
+      "method": "GET",
+      "url": "/api/logs"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 1
+[14:09:50.677] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 212,
+      "method": "GET",
+      "url": "/api/metrics/system"
+    }
+    [35mres[39m: {
+      "statusCode": 200
+    }
+    [35mresponseTime[39m: 2
+[14:09:50.703] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 213,
+      "method": "GET",
+      "url": "/api/metrics/summary"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 2
+[14:09:55.795] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 214,
+      "method": "GET",
+      "url": "/api/metrics/system"
+    }
+    [35mres[39m: {
+      "statusCode": 200
+    }
+    [35mresponseTime[39m: 1
+[14:09:55.810] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 215,
+      "method": "GET",
+      "url": "/api/metrics/summary"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 2
+[14:09:59.414] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 216,
+      "method": "GET",
+      "url": "/api/services"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 1
+[14:09:59.416] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 217,
+      "method": "GET",
+      "url": "/api/logs"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 1
+[14:09:59.421] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 218,
+      "method": "GET",
+      "url": "/api/healthz"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 0
+[14:10:00.896] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 219,
+      "method": "GET",
+      "url": "/api/metrics/system"
+    }
+    [35mres[39m: {
+      "statusCode": 200
+    }
+    [35mresponseTime[39m: 1
+[14:10:00.914] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 220,
+      "method": "GET",
+      "url": "/api/metrics/summary"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 2
+[14:10:06.004] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 222,
+      "method": "GET",
+      "url": "/api/metrics/system"
+    }
+    [35mres[39m: {
+      "statusCode": 200
+    }
+    [35mresponseTime[39m: 0
+[14:10:06.341] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 223,
+      "method": "GET",
+      "url": "/api/metrics/summary"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 2
+[14:10:08.019] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 221,
+      "method": "GET",
+      "url": "/api/ie/work-orders"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 6818
+[14:10:09.605] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 224,
+      "method": "GET",
+      "url": "/api/healthz"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 0
+[14:10:09.609] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 225,
+      "method": "GET",
+      "url": "/api/logs"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 1
+[14:10:09.722] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 226,
+      "method": "GET",
+      "url": "/api/services"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 1
+[14:10:11.101] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 227,
+      "method": "GET",
+      "url": "/api/metrics/system"
+    }
+    [35mres[39m: {
+      "statusCode": 200
+    }
+    [35mresponseTime[39m: 1
+[14:10:11.437] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 228,
+      "method": "GET",
+      "url": "/api/metrics/summary"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 2
+[14:10:16.204] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 229,
+      "method": "GET",
+      "url": "/api/metrics/system"
+    }
+    [35mres[39m: {
+      "statusCode": 200
+    }
+    [35mresponseTime[39m: 1
+[14:10:16.538] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 230,
+      "method": "GET",
+      "url": "/api/metrics/summary"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 2
+[14:10:19.709] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 231,
+      "method": "GET",
+      "url": "/api/healthz"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 0
+[14:10:19.726] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 232,
+      "method": "GET",
+      "url": "/api/logs"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 1
+[14:10:19.816] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 233,
+      "method": "GET",
+      "url": "/api/services"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 2
+[14:10:21.308] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 234,
+      "method": "GET",
+      "url": "/api/metrics/system"
+    }
+    [35mres[39m: {
+      "statusCode": 200
+    }
+    [35mresponseTime[39m: 1
+[14:10:21.635] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 235,
+      "method": "GET",
+      "url": "/api/metrics/summary"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 2
+[14:10:26.412] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 237,
+      "method": "GET",
+      "url": "/api/metrics/system"
+    }
+    [35mres[39m: {
+      "statusCode": 200
+    }
+    [35mresponseTime[39m: 1
+[14:10:26.730] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 238,
+      "method": "GET",
+      "url": "/api/metrics/summary"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 2
+[14:10:28.886] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 236,
+      "method": "GET",
+      "url": "/api/ie/work-orders"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 5735
+[14:10:29.819] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 239,
+      "method": "GET",
+      "url": "/api/healthz"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 0
+[14:10:29.830] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 240,
+      "method": "GET",
+      "url": "/api/logs"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 1
+[14:10:29.909] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 241,
+      "method": "GET",
+      "url": "/api/services"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 2
+[14:10:31.507] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 242,
+      "method": "GET",
+      "url": "/api/metrics/system"
+    }
+    [35mres[39m: {
+      "statusCode": 200
+    }
+    [35mresponseTime[39m: 1
+[14:10:31.822] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 243,
+      "method": "GET",
+      "url": "/api/metrics/summary"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 1
+[14:10:36.618] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 244,
+      "method": "GET",
+      "url": "/api/metrics/system"
+    }
+    [35mres[39m: {
+      "statusCode": 200
+    }
+    [35mresponseTime[39m: 1
+[14:10:36.930] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 245,
+      "method": "GET",
+      "url": "/api/metrics/summary"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 1
+[14:10:39.930] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 246,
+      "method": "GET",
+      "url": "/api/healthz"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 1
+[14:10:39.932] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 247,
+      "method": "GET",
+      "url": "/api/logs"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 1
+[14:10:40.012] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 248,
+      "method": "GET",
+      "url": "/api/services"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 1
+[14:10:41.715] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 249,
+      "method": "GET",
+      "url": "/api/metrics/system"
+    }
+    [35mres[39m: {
+      "statusCode": 200
+    }
+    [35mresponseTime[39m: 1
+[14:10:42.029] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 250,
+      "method": "GET",
+      "url": "/api/metrics/summary"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 1
+[14:10:46.895] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 252,
+      "method": "GET",
+      "url": "/api/metrics/system"
+    }
+    [35mres[39m: {
+      "statusCode": 200
+    }
+    [35mresponseTime[39m: 0
+[14:10:47.177] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 253,
+      "method": "GET",
+      "url": "/api/metrics/summary"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 2
+[14:10:50.051] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 254,
+      "method": "GET",
+      "url": "/api/healthz"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 0
+[14:10:50.110] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 255,
+      "method": "GET",
+      "url": "/api/logs"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 2
+[14:10:50.115] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 256,
+      "method": "GET",
+      "url": "/api/services"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 1
+[14:10:52.095] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 257,
+      "method": "GET",
+      "url": "/api/metrics/system"
+    }
+    [35mres[39m: {
+      "statusCode": 200
+    }
+    [35mresponseTime[39m: 1
+[14:10:52.151] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 251,
+      "method": "GET",
+      "url": "/api/ie/work-orders"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 8095
+[14:10:52.272] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 258,
+      "method": "GET",
+      "url": "/api/metrics/summary"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 2
+[14:10:57.198] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 259,
+      "method": "GET",
+      "url": "/api/metrics/system"
+    }
+    [35mres[39m: {
+      "statusCode": 200
+    }
+    [35mresponseTime[39m: 1
+[14:10:57.411] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 260,
+      "method": "GET",
+      "url": "/api/metrics/summary"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 2
+[14:11:00.226] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 261,
+      "method": "GET",
+      "url": "/api/healthz"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 1
+[14:11:00.231] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 262,
+      "method": "GET",
+      "url": "/api/services"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 2
+[14:11:00.255] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 263,
+      "method": "GET",
+      "url": "/api/logs"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 1
+[14:11:02.294] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 264,
+      "method": "GET",
+      "url": "/api/metrics/system"
+    }
+    [35mres[39m: {
+      "statusCode": 200
+    }
+    [35mresponseTime[39m: 1
+[14:11:02.511] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 265,
+      "method": "GET",
+      "url": "/api/metrics/summary"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 2
+[14:11:07.410] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 266,
+      "method": "GET",
+      "url": "/api/metrics/system"
+    }
+    [35mres[39m: {
+      "statusCode": 200
+    }
+    [35mresponseTime[39m: 1
+[14:11:07.634] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 267,
+      "method": "GET",
+      "url": "/api/metrics/summary"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 2
+[14:11:10.332] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 269,
+      "method": "GET",
+      "url": "/api/healthz"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 0
+[14:11:10.334] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 270,
+      "method": "GET",
+      "url": "/api/services"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 1
+[14:11:10.517] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 271,
+      "method": "GET",
+      "url": "/api/logs"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 1
+[14:11:12.514] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 272,
+      "method": "GET",
+      "url": "/api/metrics/system"
+    }
+    [35mres[39m: {
+      "statusCode": 200
+    }
+    [35mresponseTime[39m: 1
+[14:11:13.141] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 273,
+      "method": "GET",
+      "url": "/api/metrics/summary"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 2
+[14:11:15.421] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 268,
+      "method": "GET",
+      "url": "/api/ie/work-orders"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 7623
+[14:11:17.620] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 274,
+      "method": "GET",
+      "url": "/api/metrics/system"
+    }
+    [35mres[39m: {
+      "statusCode": 200
+    }
+    [35mresponseTime[39m: 1
+[14:11:18.552] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 275,
+      "method": "GET",
+      "url": "/api/metrics/summary"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 2
+[14:11:20.638] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 276,
+      "method": "GET",
+      "url": "/api/healthz"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 1
+[14:11:20.643] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 277,
+      "method": "GET",
+      "url": "/api/services"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 1
+[14:11:20.669] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 278,
+      "method": "GET",
+      "url": "/api/logs"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 2
+[14:11:22.719] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 279,
+      "method": "GET",
+      "url": "/api/metrics/system"
+    }
+    [35mres[39m: {
+      "statusCode": 200
+    }
+    [35mresponseTime[39m: 1
+[14:11:23.652] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 280,
+      "method": "GET",
+      "url": "/api/metrics/summary"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 2
+[14:11:27.831] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 281,
+      "method": "GET",
+      "url": "/api/metrics/system"
+    }
+    [35mres[39m: {
+      "statusCode": 200
+    }
+    [35mresponseTime[39m: 1
+[14:11:28.749] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 282,
+      "method": "GET",
+      "url": "/api/metrics/summary"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 2
+[14:11:30.805] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 284,
+      "method": "GET",
+      "url": "/api/healthz"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 0
+[14:11:30.807] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 285,
+      "method": "GET",
+      "url": "/api/services"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 1
+[14:11:30.809] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 286,
+      "method": "GET",
+      "url": "/api/logs"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 1
+[14:11:33.251] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 287,
+      "method": "GET",
+      "url": "/api/metrics/system"
+    }
+    [35mres[39m: {
+      "statusCode": 200
+    }
+    [35mresponseTime[39m: 0
+[14:11:33.854] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 288,
+      "method": "GET",
+      "url": "/api/metrics/summary"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 2
+[14:11:34.941] [32mINFO[39m (297): [36mrequest aborted[39m
+    [35mreq[39m: {
+      "id": 283,
+      "method": "GET",
+      "url": "/api/ie/work-orders"
+    }
+    [35mres[39m: {
+      "statusCode": null
+    }
+    [35mresponseTime[39m: 4138
+[14:13:59.148] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 289,
+      "method": "GET",
+      "url": "/api/metrics/system"
+    }
+    [35mres[39m: {
+      "statusCode": 200
+    }
+    [35mresponseTime[39m: 1
+[14:13:59.335] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 291,
+      "method": "GET",
+      "url": "/api/logs"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 12
+[14:13:59.336] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 290,
+      "method": "GET",
+      "url": "/api/metrics/summary"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 14
+[14:13:59.337] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 292,
+      "method": "GET",
+      "url": "/api/services"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 11
+[14:13:59.374] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 293,
+      "method": "GET",
+      "url": "/api/healthz"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 1
+[14:14:04.400] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 295,
+      "method": "GET",
+      "url": "/api/metrics/system"
+    }
+    [35mres[39m: {
+      "statusCode": 200
+    }
+    [35mresponseTime[39m: 1
+[14:14:05.910] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 296,
+      "method": "GET",
+      "url": "/api/metrics/summary"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 2
+[14:14:08.207] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 294,
+      "method": "GET",
+      "url": "/api/ie/work-orders"
+    }
+    [35mres[39m: {
+      "statusCode": 200
+    }
+    [35mresponseTime[39m: 8282
+[14:14:09.485] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 297,
+      "method": "GET",
+      "url": "/api/services"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 1
+[14:14:09.499] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 298,
+      "method": "GET",
+      "url": "/api/logs"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 1
+[14:14:09.507] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 299,
+      "method": "GET",
+      "url": "/api/healthz"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 1
+[14:14:09.514] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 300,
+      "method": "GET",
+      "url": "/api/metrics/system"
+    }
+    [35mres[39m: {
+      "statusCode": 200
+    }
+    [35mresponseTime[39m: 1
+[14:14:11.015] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 301,
+      "method": "GET",
+      "url": "/api/metrics/summary"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 3
+[14:14:14.715] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 302,
+      "method": "GET",
+      "url": "/api/metrics/system"
+    }
+    [35mres[39m: {
+      "statusCode": 200
+    }
+    [35mresponseTime[39m: 1
+[14:14:16.174] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 303,
+      "method": "GET",
+      "url": "/api/metrics/summary"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 2
+[14:14:19.591] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 304,
+      "method": "GET",
+      "url": "/api/services"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 2
+[14:14:19.603] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 305,
+      "method": "GET",
+      "url": "/api/logs"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 1
+[14:14:19.615] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 306,
+      "method": "GET",
+      "url": "/api/healthz"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 0
+[14:14:20.319] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 307,
+      "method": "GET",
+      "url": "/api/metrics/system"
+    }
+    [35mres[39m: {
+      "statusCode": 200
+    }
+    [35mresponseTime[39m: 1
+[14:14:21.275] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 308,
+      "method": "GET",
+      "url": "/api/metrics/summary"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 2
+[14:14:25.433] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 309,
+      "method": "GET",
+      "url": "/api/metrics/system"
+    }
+    [35mres[39m: {
+      "statusCode": 200
+    }
+    [35mresponseTime[39m: 1
+[14:14:26.990] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 310,
+      "method": "GET",
+      "url": "/api/metrics/summary"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 2
+[14:14:29.785] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 311,
+      "method": "GET",
+      "url": "/api/logs"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 1
+[14:14:29.788] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 312,
+      "method": "GET",
+      "url": "/api/services"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 1
+[14:14:29.792] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 313,
+      "method": "GET",
+      "url": "/api/healthz"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 0
+[14:14:30.665] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 314,
+      "method": "GET",
+      "url": "/api/metrics/system"
+    }
+    [35mres[39m: {
+      "statusCode": 200
+    }
+    [35mresponseTime[39m: 0
+[14:14:32.106] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 315,
+      "method": "GET",
+      "url": "/api/metrics/summary"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 1
+[14:14:35.933] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 316,
+      "method": "GET",
+      "url": "/api/metrics/system"
+    }
+    [35mres[39m: {
+      "statusCode": 200
+    }
+    [35mresponseTime[39m: 1
+[14:14:37.411] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 318,
+      "method": "GET",
+      "url": "/api/metrics/summary"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 2
+[14:14:39.889] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 319,
+      "method": "GET",
+      "url": "/api/logs"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 1
+[14:14:39.920] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 320,
+      "method": "GET",
+      "url": "/api/services"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 1
+[14:14:39.924] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 321,
+      "method": "GET",
+      "url": "/api/healthz"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 0
+[14:14:41.726] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 322,
+      "method": "GET",
+      "url": "/api/metrics/system"
+    }
+    [35mres[39m: {
+      "statusCode": 200
+    }
+    [35mresponseTime[39m: 1
+[14:14:42.542] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 323,
+      "method": "GET",
+      "url": "/api/metrics/summary"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 2
+[14:14:45.752] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 317,
+      "method": "GET",
+      "url": "/api/ie/work-orders"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 9110
+[14:14:47.022] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 324,
+      "method": "GET",
+      "url": "/api/metrics/system"
+    }
+    [35mres[39m: {
+      "statusCode": 200
+    }
+    [35mresponseTime[39m: 0
+[14:14:48.040] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 325,
+      "method": "GET",
+      "url": "/api/metrics/summary"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 2
+[14:14:50.001] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 326,
+      "method": "GET",
+      "url": "/api/logs"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 2
+[14:14:50.028] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 327,
+      "method": "GET",
+      "url": "/api/services"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 1
+[14:14:50.043] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 328,
+      "method": "GET",
+      "url": "/api/healthz"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 0
+[14:14:52.165] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 329,
+      "method": "GET",
+      "url": "/api/metrics/system"
+    }
+    [35mres[39m: {
+      "statusCode": 200
+    }
+    [35mresponseTime[39m: 0
+[14:14:53.165] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 330,
+      "method": "GET",
+      "url": "/api/metrics/summary"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 1
+[14:14:57.278] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 331,
+      "method": "GET",
+      "url": "/api/metrics/system"
+    }
+    [35mres[39m: {
+      "statusCode": 200
+    }
+    [35mresponseTime[39m: 1
+[14:14:58.283] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 332,
+      "method": "GET",
+      "url": "/api/metrics/summary"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 2
+[14:15:00.235] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 333,
+      "method": "GET",
+      "url": "/api/logs"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 1
+[14:15:00.237] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 334,
+      "method": "GET",
+      "url": "/api/healthz"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 1
+[14:15:00.243] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 335,
+      "method": "GET",
+      "url": "/api/services"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 2
+[14:15:02.146] [32mINFO[39m (297): [36mrequest aborted[39m
+    [35mreq[39m: {
+      "id": 336,
+      "method": "GET",
+      "url": "/api/ie/work-orders"
+    }
+    [35mres[39m: {
+      "statusCode": null
+    }
+    [35mresponseTime[39m: 1270
+[14:15:03.257] [32mINFO[39m (297): [36mrequest aborted[39m
+    [35mreq[39m: {
+      "id": 337,
+      "method": "GET",
+      "url": "/api/ie/work-orders"
+    }
+    [35mres[39m: {
+      "statusCode": null
+    }
+    [35mresponseTime[39m: 1110
+[14:15:03.287] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 338,
+      "method": "GET",
+      "url": "/@replit/vite-plugin-dev-banner/banner-script.js"
+    }
+    [35mres[39m: {
+      "statusCode": 404
+    }
+    [35mresponseTime[39m: 2
+[14:15:05.399] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 340,
+      "method": "GET",
+      "url": "/@replit/vite-plugin-dev-banner/banner-script.js"
+    }
+    [35mres[39m: {
+      "statusCode": 404
+    }
+    [35mresponseTime[39m: 1
+[14:15:10.474] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 339,
+      "method": "GET",
+      "url": "/api/ie/work-orders"
+    }
+    [35mres[39m: {
+      "statusCode": 200
+    }
+    [35mresponseTime[39m: 5180
+[14:15:13.949] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 341,
+      "method": "GET",
+      "url": "/api/ie/work-orders"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 7083
+[14:15:39.504] [32mINFO[39m (297): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 342,
+      "method": "GET",
+      "url": "/api/ie/work-orders"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 8665
